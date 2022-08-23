@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'q2ifrontend-dev'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B4B40C74150A4B219C63B01B7682B6C4 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1CE7690A6FAB41699D7CF71332AF201F }}
           package: .
