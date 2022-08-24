@@ -1,19 +1,17 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import TheLogin from './components/TheLogin.vue'
 </script>
 
 <template>
   <header>
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <HelloWorld msg="Q2I Challenge!" />
     </div>
   </header>
-
   <main>
-    <TheWelcome />
+    <TheLogin />
   </main>
 </template>
 
