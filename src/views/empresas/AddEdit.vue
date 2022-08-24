@@ -12,11 +12,11 @@ const alertStore = useAlertStore();
 const route = useRoute();
 const id = route.params.id;
 
-let title = 'Add User';
+let title = 'Add Empresa';
 let user = null;
 if (id) {
     // edit mode
-    title = 'Edit User';
+    title = 'Edit Empresa';
     ({ user } = storeToRefs(usersStore));
     usersStore.getById(id);
 }

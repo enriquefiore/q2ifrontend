@@ -8,4 +8,4 @@ export default {
         { path: 'add', component: AddEdit },
         { path: 'edit/:id', component: AddEdit }
     ]
-}
+};

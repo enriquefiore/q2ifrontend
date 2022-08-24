@@ -1,5 +1,6 @@
 <script setup>
 import { useAuthStore } from '@/stores';
+
 const authStore = useAuthStore();
 </script>
 
@@ -7,7 +8,10 @@ const authStore = useAuthStore();
     <nav v-show="authStore.user" class="navbar navbar-expand navbar-dark bg-dark">
         <div class="navbar-nav">
             <router-link to="/" class="nav-item nav-link">Home</router-link>
+            <router-link to="/empresas" class="nav-item nav-link">Empresas</router-link>
+            <router-link to="/funcionarios" class="nav-item nav-link">Funcionários</router-link>
             <router-link to="/users" class="nav-item nav-link">Users</router-link>
+            
             <button @click="authStore.logout()" class="btn btn-link nav-item nav-link">Logout</button>
         </div>
     </nav>
