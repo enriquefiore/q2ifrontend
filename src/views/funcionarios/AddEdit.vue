@@ -12,11 +12,11 @@ const alertStore = useAlertStore();
 const route = useRoute();
 const id = route.params.id;
 
-let title = 'Add User';
+let title = 'Add Funcionário';
 let user = null;
 if (id) {
     // edit mode
-    title = 'Edit User';
+    title = 'Edit Funcionário';
     ({ user } = storeToRefs(usersStore));
     usersStore.getById(id);
 }
@@ -100,7 +100,7 @@ async function onSubmit(values) {
     </template>
     <template v-if="user?.error">
         <div class="text-center m-5">
-            <div class="text-danger">Error loading user: {{user.error}}</div>
+            <div class="text-danger">Error loading funcionário: {{user.error}}</div>
         </div>
     </template>
 </template>

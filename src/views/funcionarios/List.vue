@@ -10,8 +10,8 @@ usersStore.getAll();
 </script>
 
 <template>
-    <h1>Users</h1>
-    <router-link to="/users/add" class="btn btn-sm btn-success mb-2">Add User</router-link>
+    <h1>Funcionários</h1>
+    <router-link to="/users/add" class="btn btn-sm btn-success mb-2">Add Funcionário</router-link>
     <table class="table table-striped">
         <thead>
             <tr>
@@ -43,7 +43,7 @@ usersStore.getAll();
             </tr>
             <tr v-if="users.error">
                 <td colspan="4">
-                    <div class="text-danger">Error loading users: {{users.error}}</div>
+                    <div class="text-danger">Error loading funcionários: {{users.error}}</div>
                 </td>
             </tr>            
         </tbody>
